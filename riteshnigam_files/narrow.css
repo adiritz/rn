@@ -1,0 +1,72 @@
+/* CSS Document */
+*{
+position: static;
+}
+
+h1 {
+		padding: .5rem;
+	background: black;
+	display: block;
+	font-size: 1rem;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center; 
+}
+
+
+figure {
+	width: 80vw;
+	height: auto;
+	border-radius: 0;
+	margin: 0 auto;
+	position: relative;
+	background: url("images/Ritesh-Nigam.jpg") top center no-repeat;
+	background-size: 100% auto;
+}
+
+figcaption {
+	margin-left: 0;
+	width: auto;
+	margin-top: 0;
+	padding-top: 80vw;
+	border: none;
+}
+
+hr.vert {
+	width: auto;
+	margin: 1rem 10vw;
+	height: 2px;
+	position: static;
+}
+
+.subnav {
+	position: static;
+	width: auto;
+	padding: 0 10vw 10vw;
+}
+
+.subnav ul li a {
+	display: block;
+}
+
+.pointer {
+	width: 1.25rem;
+	height: 1.25rem;
+	display: block;
+	position: absolute;
+	top: 1rem;
+	right: 8vw;
+	z-index: 100;
+}
+
+.pointer:hover {
+	filter: invert();
+}
+
+body.dark .highlighted {
+	filter: invert();
+}
+
