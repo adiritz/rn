@@ -9,11 +9,11 @@ body {
 }
 
 html {
-  min-width: 435px;
+  min-width: 100%;
 }
 
 header {
-  min-width: 435px;
+  min-width: 100%;
 }
 
 header .title-background {
@@ -25,7 +25,7 @@ header .title-background {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("./books.jpg");
+  background: var(--image);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ header .title-background .header-image {
 header .header-links {
   background-color: black;
   height: 100%;
-  padding: 3em 1em;
+  padding: 2em 1em;
 }
 
 header .header-links a {
@@ -77,7 +77,7 @@ header .header-links a {
 }
 
 nav {
-  padding: 30px;
+  padding: 20px;
 }
 
 nav ul {
@@ -107,19 +107,19 @@ nav ul li:hover a {
 }
 
 .shop-grid {
-  padding: 20px;
+  padding: 10px 10px  0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   -ms-grid-rows: 250px;
       grid-template-rows: 250px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 .card {
@@ -201,6 +201,7 @@ footer {
 
 footer p {
   padding-left: 2rem;
+  width: 100%;
 }
 
 footer p a {
@@ -226,6 +227,44 @@ footer div button img {
   margin-top: 10px;
   height: 25px;
   width: 25px;
+}
+
+@media only screen and (min-width: 120px) {
+  .shop-grid {
+    padding: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    -ms-grid-rows: 250px;
+        grid-template-rows: 250px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 10px;
+  }
+}
+
+
+
+@media only screen and (min-width: 420px) {
+  .shop-grid {
+    padding: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    -ms-grid-rows: 250px;
+        grid-template-rows: 250px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 20px;
+  }
 }
 
 @media only screen and (min-width: 790px) {
